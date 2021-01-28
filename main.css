@@ -1,0 +1,572 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* LOADER */
+
+.loader{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: white no-repeat center;
+  z-index: 999;
+}
+
+#loaderimg {
+  width: 10%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+/* IMPORTED CUSTOM FONTS */
+
+@font-face {
+  font-family: yatraone;
+  src: url(fonts/YatraOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: blocus;
+  src: url(fonts/blocuswebfont.ttf);
+}
+
+/* LINK STYLIING */
+
+a:link {
+  text-decoration: none;
+}
+
+a:link {
+  color: white;
+
+}
+
+/* visited link */
+a:visited {
+  color: white;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+
+}
+
+/* selected link */
+a:active {
+  color: black;
+}
+
+/* BG PARALLAX EFFECT */
+.parallaxbg {
+  z-index: 10;
+  background-image: url('background_grainygradient.png');
+  background-size: contain;
+  background-attachment: scroll;
+  background-position: center;
+  transition: initial;
+}
+
+
+/* HEADER FONT AND ALIGNMENT ?(how to make it a gradient)? */
+h1 {
+  font-family: blocus;
+  color: white;
+  text-align: center;
+}
+
+#photosheader {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#designheader {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#writingheader {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#movingimagesheader {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#threedthingsheader {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+#contactcvheader {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* PHOTOS SECTION */
+
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+}
+#slideContainer {
+  width: 1800%; /* to contain 18 panels, each with 100% of window width */
+  height: 100%;
+}
+.panel {
+  width: 5.56%;
+  height: 100%; /* relative to parent -> 5.56% of 1800% = 100% of window width */
+  float: left;
+}
+.panel.one {
+background-image: url(imgs/ny13.jpg);
+background-size: 60%;
+background-position: center;
+background-repeat: no-repeat;
+}
+.panel.two {
+background-image: url(imgs/koogieparkinglot.jpg);
+background-size: 60%;
+background-position: center;
+background-repeat: no-repeat;
+}
+.panel.three {
+background-image: url(imgs/diptich_xzaxis_dad.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+.panel.four {
+background-image: url(imgs/beach29.jpg);
+background-size: 60%;
+background-position: center;
+background-repeat: no-repeat;
+}
+.panel.five {
+background-image: url(imgs/sophiaroll5.jpg);
+background-size: 60%;
+background-position: center;
+background-repeat: no-repeat;
+}
+.panel.six {
+  background-image: url(imgs/diptich_celesteandnina_bed.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.seven {
+background-image: url(imgs/diptich_samcar_sauviesman.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+}
+.panel.eight {
+  background-image: url(imgs/oliviantree.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.nine {
+  background-image: url(imgs/celestetotnes.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.ten {
+  background-image: url(imgs/diptich_party13_standbyme.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.eleven {
+  background-image: url(imgs/beach8.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.twelve {
+  background-image: url(imgs/diptich_dog_toby.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.thirteen {
+  background-image: url(imgs/beach13.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.fourteen {
+  background-image: url(imgs/partypeople.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.fifteen {
+  background-image: url(imgs/exit.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.sixteen {
+  background-image: url(imgs/carnina.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.seventeen {
+  background-image: url(imgs/diptich_samnarlo_gabbynkoogie.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.panel.eighteen {
+  background-image: url(imgs/bluenina.jpg);
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* MOVING IMAGES SECTION */
+
+.beepboopanimation {
+  display: flex;
+  justify-content: center;
+}
+
+/* BOTTOM MENU */
+
+.btn-group {
+  display: flex; /* Make the buttons appear below each other */
+  flex-direction: column;
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+}
+
+/* bottom menu button hover over effect */
+
+.btn-group a {
+  font-family: blocus;
+  font-size: 20px;
+  background: white; /* background */
+  z-index: -2;
+  border: 1px solid rgb(0, 0, 0); /* border */
+  color: black; /* text color */
+  padding-top: 6px;
+  padding-bottom: 12px;
+  padding-right: 8px;
+  cursor: pointer; 
+  width: 180px;
+  height: 10px;
+  text-align: right;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+  
+.btn-group a:not(:last-child) {
+  border-bottom: none; /* Prevent double borders */
+}
+/* Add a background color on hover */
+.btn-group a:hover {
+  color: #fff;
+}
+.btn-group #bleft:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #5084FF, #EB8948);
+}
+
+.btn-group #bleft:hover:after,
+.btn-group #bleft:active:after {
+    width: 100%;
+}
+
+.btn-group #bright:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(to right, #5084FF, #EB8948);
+}
+
+.btn-group #bright:hover:after,
+.btn-group #bright:active:after {
+    width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+  .btn-group a {
+    font-size: 10px;
+    width: 100px;
+    height: 5px;
+  }
+}
+
+@media screen and (max-width: 60px) {
+  .btn-group a {
+    font-size: 10px;
+    width: 100px;
+    height: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+/* TOP MENU/HEADER*/
+
+.header {
+  display: fixed;
+  flex-direction: row;
+  font-family: blocus;
+  color: white;
+  position: sticky;
+}
+
+.mainmenu {
+  position: fixed;
+  color: white; 
+  z-index: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.9vw;
+  padding: 25px 0px 0px 300px;
+}
+
+/* header hover over effect */
+
+.mainmenuitems {
+  font-family: blocus;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 0px 20px 30px 80px;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  font-size: 2.2vw;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  overflow: hidden;
+  position: relative;
+}
+
+.mainmenuitems:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+  width: 0;
+  height: 20%;
+  bottom: .2;
+  left: 4;
+  background-image: linear-gradient(to right, #5084FF, #EB8948);
+}
+
+.mainmenuitems:hover:after,
+.mainmenuitems:active:after {
+    width: 100%;
+}
+
+/* window resizing for top menu/header */
+
+@media screen and (max-width: 1400px) {
+  .mainmenuitems {
+  padding: 0px 20px 0px 20px;
+  }
+}
+@media screen and (max-width: 1180px) {
+  .mainmenuitems {
+  padding: 0px 15px 0px 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .mainmenuitems {
+  padding: 5px 12px 0px 12px;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .mainmenuitems {
+  padding: 0px 10px 0px 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mainmenuitems {
+  padding: 5px 8px 0px 8px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .mainmenuitems {
+  padding: 5px 7px 0px 7px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .mainmenuitems {
+  display: none;
+  }
+}
+@media screen and (max-width: 750px) {
+  #photosheader {
+    font-size: 10px;
+  }
+}
+
+/* NAME LOGO */
+.titlename {
+  padding: 20px 10px 10px 45px;
+  width: 220px;
+  height: 60px;
+  position: fixed; 
+
+}
+
+@media screen and (max-width: 750px) {
+  .titlename {
+    width: 150px;
+    height: 40px;
+  }
+}
+
+/* CONTACT IMAGE?? can be an image that takes up the 
+whole sreen just cause I love the way that looks and has multiple
+little hover over indicators that display different info
+links to social media 
+etc. */
+
+.contactimage {
+  width: 100vw;
+  height: 88vh;
+  z-index: -10; 
+}
+
+.bgimagetop {
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* CONTACT BUTTONS */
+
+.contactbuttonsbg {
+  background-image: url(imgs/beach22.jpg);
+  background-size: 100vw 100vh;
+}
+
+div.contactbuttons  a:link {
+    font-family: blocus;
+    color: white;
+    z-index: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 2.5vw;
+    padding: 45px 25px 45px 25px;
+    text-decoration: none;
+    border: 1px solid white;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+    overflow: hidden;
+    position: relative;
+}
+
+    div.contactbuttons  a:visited {
+      color: white;
+    }
+
+    div.contactbuttons  a:hover {
+      color: black;
+      background-color: white;
+    }
+
+    div.contactbuttons  a:active {
+      color: #EB8948;
+    }
+
+    .contactbuttons:after {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      transition: all 0.6s;
+      width: 0;
+      height: 20%;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to right, #5084FF, #EB8948);
+    }
+    
+    .contactbuttons:hover:after,
+    .contactbuttons:active:after {
+        width: 100%;
+    }
+
+/* DESIGN + ILLUSTRATION SECTION */
+
+#di1, #di2, #di3, #di4, #di5, #di6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
